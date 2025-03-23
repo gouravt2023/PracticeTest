@@ -28,6 +28,7 @@ public class openNewAccountPage extends AbstractComponent {
         Select sc=new Select(accountType);
         sc.selectByVisibleText("SAVINGS");
         System.out.println(sc.getFirstSelectedOption().getText());
+        System.out.println("checking to test something ");
     }
 }
 
