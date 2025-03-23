@@ -14,7 +14,6 @@ public class userRegistrationPage extends AbstractComponent {
         super(driver);
         this.driver = driver;
         PageFactory.initElements(driver, this);
-
     }
 
     @FindBy(xpath = "//p/a[text()='Register']")
@@ -69,9 +68,9 @@ public class userRegistrationPage extends AbstractComponent {
         zipcode.sendKeys("390011");
         phoneNumber.sendKeys("9999999990");
         ssn.sendKeys("11111111111");
-        username.sendKeys("gkt1234@yopmail.com");
-        pwd.sendKeys("Gktd@123");
-        confirmPwd.sendKeys("Gktd@123");
+        username.sendKeys("gkt12345@yopmail.com");
+        pwd.sendKeys("Gktdd@123");
+        confirmPwd.sendKeys("Gktdd@123");
         submitBtn.click();
         logoutBtn.click();
 
@@ -80,5 +79,4 @@ public class userRegistrationPage extends AbstractComponent {
     public void goTo() {
         driver.get("https://parabank.parasoft.com/parabank/index.htm");
     }
-
 }

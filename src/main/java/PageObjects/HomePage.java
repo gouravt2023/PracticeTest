@@ -29,11 +29,11 @@ public class HomePage extends AbstractComponent {
     WebElement signInBtn;
 
     public void login(){
-        username.sendKeys("gkt1234@yopmail.com");
-        pwd.sendKeys("Gktd@123");
+        username.sendKeys("gkt12345@yopmail.com");
+        pwd.sendKeys("Gktdd@123");
         signInBtn.click();
         //userRegistrationPage ht=new userRegistrationPage(driver);
-       // ht.logoutBtn.click();
+        //ht.logoutBtn.click();
     }
 
 

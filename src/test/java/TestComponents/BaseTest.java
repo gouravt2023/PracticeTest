@@ -6,6 +6,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -34,6 +35,7 @@ public class BaseTest {
         return driver;
     }
 
+    @BeforeMethod
     public WebDriver launchApplication() throws IOException {
         driver=initializeDriver();
        userRegistrationPage hr=new userRegistrationPage(driver);
